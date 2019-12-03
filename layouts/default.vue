@@ -1,8 +1,19 @@
 <template>
-  <div>
+  <div class="p-3">
+    <MainMenu />
     <nuxt />
   </div>
 </template>
+
+<script>
+import MainMenu from '~/components/MainMenu'
+
+export default {
+  components: {
+    MainMenu
+  }
+}
+</script>
 
 <style>
 html {
