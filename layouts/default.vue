@@ -10,8 +10,8 @@ import MainMenu from '~/components/MainMenu'
 
 export default {
   components: {
-    MainMenu
-  }
+    MainMenu,
+  },
 }
 </script>
 

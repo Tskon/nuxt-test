@@ -9,15 +9,28 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'airbnb-base',
+    'plugin:vue/recommended'
   ],
-  plugins: [
-    'prettier'
-  ],
-  // add your custom rules here
+
   rules: {
+    'semi': ['error', 'never'],
+    'no-shadow': ['error', { 'allow': ['state'] }],
+    'no-param-reassign': [
+      'error',
+      {
+        'props': false,
+        // 'ignorePropertyModificationsFor': ['state'],
+      }
+    ],
+    'import/prefer-default-export': 'off',
+    'import/no-unresolved': 'off',
+    'max-len': 'off',
+    'template-curly-spacing': 'off',
+    'indent': ['error', 2, {
+      'SwitchCase': 1,
+      'ignoredNodes': ['TemplateLiteral']
+    }],
   }
 }

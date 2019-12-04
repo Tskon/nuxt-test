@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1>test-page</h1>
-    <TestPageMenu></TestPageMenu>
+    <h1 class="camelCase">
+      test-page
+    </h1>
+    <TestPageMenu />
   </div>
 </template>
 
@@ -10,9 +12,13 @@ import TestPageMenu from '~/components/TestPageMenu'
 
 export default {
   components: {
-    TestPageMenu
-  }
+    TestPageMenu,
+  },
 }
 </script>
 
-<style scoped></style>
+<style>
+  .camelCase {
+    background-color: #090;
+  }
+</style>
