@@ -24,9 +24,9 @@ export default {
    ** Global CSS
    */
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
+  router: {
+    // middleware: ['testMiddle'],
+  },
   plugins: ['~/plugins/testAxios'],
   /*
    ** Nuxt.js dev-modules

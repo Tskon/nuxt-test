@@ -10,6 +10,7 @@
 import TestPageMenu from '~/components/TestPageMenu'
 
 export default {
+  middleware: 'testMiddle',
   components: {
     TestPageMenu,
   },
