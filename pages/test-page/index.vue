@@ -14,6 +14,9 @@ export default {
   components: {
     TestPageMenu,
   },
+  mounted() {
+    this.$testAxios()
+  },
 }
 </script>
 
